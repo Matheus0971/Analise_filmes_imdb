@@ -27,6 +27,33 @@
       "name": "f6de9ff4966e98ae1b35",
       "visualContainers": [
         {
+          "config": "{\"name\":\"60a1a0019b09976cb1b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":439.6352583586626,\"y\":0,\"z\":2,\"width\":527.1732522796353,\"height\":340.4255319148936,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"imdb_movies.Nota_imdb\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(imdb_movies.Oscar)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"imdb_movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Nota_imdb\"},\"Name\":\"imdb_movies.Nota_imdb\",\"NativeReferenceName\":\"Nota_imdb\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Oscar\"}},\"Function\":5},\"Name\":\"CountNonNull(imdb_movies.Oscar)\",\"NativeReferenceName\":\"Contagem de Oscar\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Oscar\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 340.43,
+          "width": 527.17,
+          "x": 439.64,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"754bbead339f30bb68da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":977,\"y\":0,\"width\":303,\"height\":340,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(imdb_movies.Receita_bruta_mundial)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"imdb_movies\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Receita_bruta_mundial\"}},\"Function\":0},\"Name\":\"Sum(imdb_movies.Receita_bruta_mundial)\",\"NativeReferenceName\":\"Soma de Receita_bruta_mundial\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Receita_bruta_mundial\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 340.00,
+          "width": 303.00,
+          "x": 977.00,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"d372b3ebd3aba39fa9ef\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":359.87841945288756,\"z\":1,\"width\":619.5744680851064,\"height\":311.2462006079027,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"imdb_movies.Pais_origem\",\"active\":true}],\"Y\":[{\"queryRef\":\"imdb_movies.Resultado_financeiro\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"imdb_movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Pais_origem\"},\"Name\":\"imdb_movies.Pais_origem\",\"NativeReferenceName\":\"Pais_origem\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Resultado_financeiro\"},\"Name\":\"imdb_movies.Resultado_financeiro\",\"NativeReferenceName\":\"Resultado_financeiro\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Resultado_financeiro\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 311.25,
+          "width": 619.57,
+          "x": 0.00,
+          "y": 359.88,
+          "z": 1.00
+        },
+        {
           "config": "{\"name\":\"e6c44416d38db26f8ba8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":362.79635258358667,\"height\":311.2462006079027,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"imdb_movies.Genero\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(imdb_movies.Receita_bruta_mundial)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"imdb_movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Genero\"},\"Name\":\"imdb_movies.Genero\",\"NativeReferenceName\":\"Genero\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Receita_bruta_mundial\"}},\"Function\":0},\"Name\":\"Sum(imdb_movies.Receita_bruta_mundial)\",\"NativeReferenceName\":\"Soma de Receita_bruta_mundial\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Receita_bruta_mundial\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 311.25,

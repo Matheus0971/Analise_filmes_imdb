@@ -511,9 +511,10 @@
                 "    #\"Valor Substituído3\" = Table.ReplaceValue(#\"Coluna Duplicada1\",null,\"Desconhecido\",Replacer.ReplaceValue,{\"Localização_filme - Copiar\"}),",
                 "    #\"Colunas Removidas5\" = Table.RemoveColumns(#\"Valor Substituído3\",{\"Localização_filme - Copiar\"}),",
                 "    #\"Colunas Renomeadas5\" = Table.RenameColumns(#\"Colunas Removidas5\",{{\"Cassificacao_duracao\", \"Classificacao_duracao\"}}),",
-                "    #\"Tipo Alterado4\" = Table.TransformColumnTypes(#\"Colunas Renomeadas5\",{{\"Nota_imdb\", type number}})",
+                "    #\"Tipo Alterado4\" = Table.TransformColumnTypes(#\"Colunas Renomeadas5\",{{\"Nota_imdb\", type number}}),",
+                "    #\"Duplicatas Removidas\" = Table.Distinct(#\"Tipo Alterado4\", {\"id\"})",
                 "in",
-                "    #\"Tipo Alterado4\""
+                "    #\"Duplicatas Removidas\""
               ],
               "type": "m"
             }
