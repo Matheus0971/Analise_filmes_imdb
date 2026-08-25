@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Analise_filmes"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8b429045-cc4e-4493-9295-4fe8843c7409"
+  }
+}
